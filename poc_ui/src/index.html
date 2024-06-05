@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ANTLR4TS Example</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="../dist/index.js" defer></script>
+</head>
+
+
+<body>
+    <h1>Formula Parser</h1>
+    <div id="input-section">
+        <input type="number" id="campaignValue" placeholder="Enter Campaign Value" />
+    </div>
+    <div id="textarea-section">
+        <textarea id="input" placeholder="Enter your formula here..."> IF(CampaignValue > 10000, "High", IF(CampaignValue = 5, "Very Low","Low")) </textarea>
+    </div>
+    <button onclick="parseInput()">Parse</button>
+    <div id="output">
+        <div id="parseTree" class="parse-tree"></div>
+        <div id="evaluationResult" class="evaluation-result"></div>
+    </div>
+</body>
+</html>

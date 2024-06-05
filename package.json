@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "antlr4ts": "antlr4ts -visitor ./grammar/FieldMapperLexer.g4 && antlr4ts -visitor ./grammar/FieldMapperParser.g4 "
+  },
+  "dependencies": {
+    "antlr4ts": "^0.5.0-alpha.4"
+  },
+  "devDependencies": {
+    "antlr4ts-cli": "^0.5.0-alpha.4"
+  }
+}
